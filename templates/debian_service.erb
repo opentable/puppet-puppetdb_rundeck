@@ -10,7 +10,7 @@
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=/usr/local/bin/puppetdb_rundeck
-DAEMON_OPTS="--port <%= @port %> --pdbhost <%= @puppetdb_host %> --pdbport <%= @puppetdb_port %>"
+DAEMON_OPTS="--port <%= @port %> --pdbhost <%= @puppetdb_host %> --pdbport <%= @puppetdb_port %> --cache-timeout <%= @cache_timeout %> --thread-count <%= @thread_count %> --short-nodenames <%= @short_nodenames %>"
 NAME=puppetdb_rundeck
 DESC="puppetdb_rundeck"
 PIDFILE="/var/run/$NAME.pid"

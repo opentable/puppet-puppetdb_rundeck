@@ -25,4 +25,7 @@ class puppetdb_rundeck::params {
   $puppetdb_host = 'localhost'
   $puppetdb_post = '8080'
   $port = '4567'
+  $thread_count = '3'
+  $cache_timeout = '30'
+  $short_nodenames = false
 }
