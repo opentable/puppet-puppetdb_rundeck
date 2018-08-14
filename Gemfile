@@ -5,7 +5,7 @@ ENV['RUBY_VERSION'] = `ruby -v`
 group :development, :test do
 
   if ENV['RUBY_VERSION'] =~ /1.8/
-    gem 'rest-client', '1.7.3'
+    gem 'rest-client', '1.8.0'
     gem 'gssapi', '1.2.0'
     gem 'celluloid', '0.11.1'
   end
