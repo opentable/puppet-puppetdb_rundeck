@@ -7,7 +7,7 @@
 DAEMON_PATH="/usr/bin/"
 
 DAEMON=puppetdb_rundeck
-DAEMONOPTS="--port <%= @port %> --pdbhost <%= @puppetdb_host %> --pdbport <%= @puppetdb_port %>"
+DAEMONOPTS="--port <%= @port %> --pdbhost <%= @puppetdb_host %> --pdbport <%= @puppetdb_port %> --cache-timeout <%= @cache_timeout %> --thread-count <%= @thread_count %> --short-nodenames <%= @short_nodenames %>"
 
 NAME=puppetdb_rundeck
 DESC="puppetdb_rundeck service"

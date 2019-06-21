@@ -53,11 +53,14 @@
 #   }
 #
 class puppetdb_rundeck (
-  $service_name  = $puppetdb_rundeck::params::service_name,
-  $version       = $puppetdb_rundeck::params::version,
-  $puppetdb_host = $puppetdb_rundeck::params::puppetdb_host,
-  $puppetdb_port = $puppetdb_rundeck::params::puppetdb_post,
-  $port          = $puppetdb_rundeck::params::port
+  $service_name    = $puppetdb_rundeck::params::service_name,
+  $version         = $puppetdb_rundeck::params::version,
+  $puppetdb_host   = $puppetdb_rundeck::params::puppetdb_host,
+  $puppetdb_port   = $puppetdb_rundeck::params::puppetdb_post,
+  $port            = $puppetdb_rundeck::params::port,
+  $thread_count    = $puppetdb_rundeck::params::thread_count,
+  $cache_timeout   = $puppetdb_rundeck::params::cache_timeout,
+  $short_nodenames = $puppetdb_rundeck::params::short_nodenames,
 ) inherits puppetdb_rundeck::params {
 
   # validate parameters here
