@@ -12,7 +12,7 @@ describe 'puppetdb_rundeck' do
         it { should compile.with_all_deps }
 
         it { should contain_class('puppetdb_rundeck::params') }
-        it { should contain_class('puppetdb_rundeck::install').that_comes_before('puppetdb_rundeck::service') }
+        it { should contain_class('puppetdb_rundeck::install').that_comes_before('Class[puppetdb_rundeck::service]') }
         it { should contain_class('puppetdb_rundeck::service') }
 
         it { should contain_service('puppetdb_rundeck') }
